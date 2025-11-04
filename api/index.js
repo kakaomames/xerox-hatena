@@ -23,7 +23,7 @@ app.get('/api/video', async (req, res) => {
 
     // 関連動画取得（100件まで、深掘り）
     let relatedVideos = [];
-    const MAX_VIDEOS = 100;
+    const MAX_VIDEOS = 10000;
 
     // 1. 初期の関連動画ソースを特定（複数のプロパティから優先順位に従って探す）
     let initialRelated = info.related || [];
